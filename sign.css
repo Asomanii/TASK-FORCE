@@ -1,0 +1,58 @@
+        body {
+            background-color: #f8f9fa;
+        }
+        .signin-container {
+            max-width: 400px;
+            margin: 100px auto;
+        }
+        .signin-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background-color: #6c757d;
+            border-color: #6c757d;
+        }
+        .btn-primary:hover {
+            background-color: #5a6268;
+            border-color: #545b62;
+        }
+    </style>
+    body {
+        background-color: #1a1a1a;
+        color: #ffd700;
+    }
+    
+    .container {
+        background-color: #2a2a2a;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+    }
+    
+    .btn-primary {
+        background-color: #ffd700;
+        border-color: #ffd700;
+        color: #1a1a1a;
+        font-weight: bold;
+    }
+    
+    .btn-primary:hover {
+        background-color: #e6c200;
+        border-color: #e6c200;
+        color: #1a1a1a;
+    }
+    
+    .form-control {
+        background-color: #3a3a3a;
+        border-color: #ffd700;
+        color: #ffd700;
+    }
+    
+    .form-control:focus {
+        background-color: #3a3a3a;
+        border-color: #ffd700;
+        color: #ffd700;
+        box-shadow: 0 0 0 0.25rem rgba(255, 215, 0,

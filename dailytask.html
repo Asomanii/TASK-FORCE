@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daily Task Board</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> </head>
+<body>
+  <h1>Daily Task Board</h1>
+  <div id="question"></div>
+  <input type="text" id="user_answer">
+  <button onclick="submitAnswer()">Submit</button>
+  <div id="result"></div>
+  <div id="balance">Balance: 0.00 GHS</div>
+
+  <script>
+    $.get('/get_question', function(data) {
+      $('#question').text(data.question);
+    });
+
+    function submitAnswer() {
+      let userAnswer = $('#user_answer').val();
+      $.ajax({
+        url: '/submit_answer',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify({ answer: userAnswer, correct_answer: data.answer }),
+        success: function(response) {
+          $('#result').text(response.message);
+          // Update balance display
+        },
+        error: function(error) {
+          $('#result').text('Error submitting answer.');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

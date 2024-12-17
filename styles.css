@@ -1,0 +1,20 @@
+
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+        .action-button {
+            background-color: #ffd700;
+            color: #1a1a1a;
+            border: none;
+            transition: transform 0.3s ease;
+        }
+        .action-button:hover {
+            transform: translateY(-5px);
+        }
+        .navbar-custom {
+            background-color: #ffd90075;
+        }
+        .navbar-custom .nav-link {
+            color: #1a1a1a;
+        }
